@@ -71,7 +71,7 @@ const WorkFlow = () => {
                     viewport={{ once: true }}
                 >
                     <h2 className="text-4xl font-bold text-secondary md:text-5xl">
-                        How We Work
+                        How We <span className="text-transparent bg-gradient-to-r from-purple-300 to-secondary bg-clip-text">Work</span>
                     </h2>
                 </motion.div>
 
@@ -92,8 +92,8 @@ const WorkFlow = () => {
                                     className="relative"
                                 >
                                     {/* Circle on the timeline */}
-                                    <div className="absolute left-0 z-10 transform -translate-x-[5px]">
-                                        <Circle className="w-10 h-10 p-2 bg-purple-900 rounded-full text-secondary"  />
+                                    <div className="absolute left-0 z-10 transform -translate-x-[-1px]">
+                                        <Circle className="w-8 h-8 p-2 bg-purple-900 rounded-full text-secondary"  />
                                     </div>
 
                                     <AccordionItem 

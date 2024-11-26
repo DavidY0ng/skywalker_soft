@@ -1,13 +1,17 @@
 import Home from "./sections/Home";
 import WhatWeDo from "./sections/WhatWeDo";
 import HowWeWork from "./sections/HowWeWork"
+import WhyChooseUs from "./sections/WhyChooseUs";
+import AboutUs from "./sections/AboutUs";
 
 export default function App() {
 	return (
 		<>
-		<Home />
-		<WhatWeDo />
-		<HowWeWork />
+			<Home />
+			<WhatWeDo />
+			<HowWeWork />
+			<WhyChooseUs />
+			<AboutUs />
 		</>
 	)
 }
