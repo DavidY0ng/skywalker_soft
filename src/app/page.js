@@ -14,6 +14,7 @@ export default function App() {
 			<WhyChooseUs />
 			<AboutUs />
 			<Contact />
+			<section className=""></section>
 		</>
 	)
 }

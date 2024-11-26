@@ -55,7 +55,7 @@ const WhyChooseUs = () => {
     ];
 
     return (
-        <section className="relative py-20 bg-[#14002A]">
+        <section id="why-choose-us" className="relative py-20 bg-[#14002A]">
             <div className="container relative z-10 px-6 mx-auto">
                 {/* Section Header */}
                 <motion.div 

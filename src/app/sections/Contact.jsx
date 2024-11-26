@@ -41,7 +41,7 @@ const ContactInfo = ({ icon: Icon, title, content, link, delay = 0 }) => (
 
 const Contact = () => {
     return (
-        <section className="relative py-20 bg-[#14002A]">
+        <section id="contact" className="relative py-40 bg-[#14002A]">
             {/* Background Pattern */}
             <div className="absolute inset-0 opacity-10">
                 <div className="absolute inset-0" 
@@ -70,14 +70,7 @@ const Contact = () => {
                 </motion.div>
 
                 {/* Contact Grid */}
-                <div className="grid max-w-4xl gap-8 mx-auto md:grid-cols-2">
-                    <ContactInfo 
-                        icon={Mail}
-                        title="Email"
-                        content="halo@skywalkerlab.xyz"
-                        link="mailto:halo@skywalkerlab.xyz"
-                        delay={0.2}
-                    />
+                <div className="grid max-w-4xl gap-8 mx-auto md:grid-cols-1">
                     <ContactInfo 
                         icon={MapPin}
                         title="Address"

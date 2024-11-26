@@ -5,8 +5,16 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 
 const HomePage = () => {
+    const scrollToContact = (e) => {
+        e.preventDefault();
+        const contactSection = document.getElementById("contact");
+        if (contactSection) {
+            contactSection.scrollIntoView({ behavior: "smooth" });
+        }
+    };
+
     return (
-        <section className="relative flex items-center h-[450px] lg:min-h-[810px]">
+        <section id="home" className="relative flex items-center h-auto min-h-[810px] py-12 lg:py-0">
             {/* Background Image with Purple Gradient Overlay */}
             <div
                 className="absolute inset-0 z-0"
@@ -36,20 +44,32 @@ const HomePage = () => {
                             Empowering Your Digital Journey with Cutting-Edge
                             Web3 Solutions
                         </p>
-                        {/* CTA button with purple to teal gradient */}
+                        {/* CTA button with glow effect */}
                         <div className="flex gap-4">
-                            <button className="px-8 py-3 text-lg font-medium text-white transition-colors rounded-lg shadow-lg bg-gradient-to-r from-purple-600 to-teal-600 hover:from-purple-700 hover:to-teal-700 shadow-purple-500/25">
-                                Get Started
+                            <button
+                                onClick={scrollToContact}
+                                className="relative px-8 py-3 overflow-hidden text-lg font-medium text-white transition-all duration-500 rounded-lg shadow-lg cursor-pointer group bg-gradient-to-r from-purple-600 to-teal-600"
+                            >
+                                {/* Glow effect container */}
+                                <div className="absolute inset-0 w-0 transition-all duration-500 ease-out bg-white/20 group-hover:w-full" />
+
+                                {/* Button text */}
+                                <span className="relative z-10">
+                                    Contact Us
+                                </span>
+
+                                {/* Button shadow on hover */}
+                                <div className="absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100 shadow-[0_0_20px_rgba(45,212,191,0.5)]" />
                             </button>
                         </div>
                     </div>
 
                     {/* Right Column - Image with Purple/Teal Glow */}
-                    <div className="justify-center hidden lg:justify-end lg:flex">
-                        <div className="relative">
+                    <div className="flex justify-center lg:justify-end">
+                        <div className="relative w-[280px] lg:w-auto">
                             {/* Glow Effect */}
                             <div className="absolute transition duration-1000 rounded-lg -inset-4 bg-gradient-to-r from-purple-600/30 to-teal-600/30 blur-xl opacity-30 group-hover:opacity-40"></div>
-                            
+
                             {/* Computer with Centered Image */}
                             <div className="relative">
                                 <Image
@@ -59,7 +79,7 @@ const HomePage = () => {
                                     alt="Web3 Innovation"
                                     className="relative h-auto max-w-full"
                                 />
-                                
+
                                 {/* Centered Image with Framer Motion Animation */}
                                 <div className="absolute inset-0 flex items-center justify-center">
                                     <motion.div
@@ -69,7 +89,7 @@ const HomePage = () => {
                                         transition={{
                                             duration: 4,
                                             repeat: Infinity,
-                                            ease: "easeInOut"
+                                            ease: "easeInOut",
                                         }}
                                     >
                                         <Image
@@ -77,7 +97,7 @@ const HomePage = () => {
                                             width={120}
                                             height={130}
                                             alt="Centered content"
-                                            className="relative h-auto max-w-full translate-x-[-7px] translate-y-[-70px]"
+                                            className="relative h-auto max-w-full w-[60px] lg:w-[120px] translate-x-[-4px] lg:translate-x-[-7px] translate-y-[-40px] lg:translate-y-[-70px]"
                                         />
                                     </motion.div>
                                 </div>

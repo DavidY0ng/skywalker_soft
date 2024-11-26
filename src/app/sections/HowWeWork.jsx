@@ -47,7 +47,7 @@ const WorkFlow = () => {
     ];
 
     return (
-        <section className="relative py-20">
+        <section id="workflow" className="relative py-20">
             {/* Background Image with Overlay */}
             <div
                 className="absolute inset-0 z-0"

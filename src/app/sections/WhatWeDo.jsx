@@ -50,7 +50,7 @@ const WhatWeDo = () => {
     ];
 
     return (
-        <section className="relative py-20 bg-[#14002A]">
+        <section id="what-we-do" className="relative py-20 bg-[#14002A]">
             <div className="container relative z-10 px-6 mx-auto">
                 <div className="grid items-center grid-cols-1 gap-12 lg:grid-cols-2">
                     {/* Left Column - Image */}
@@ -73,7 +73,7 @@ const WhatWeDo = () => {
                         {/* Main Title and Subtitle */}
                         <div className="space-y-4">
                             <h2 className="text-4xl font-bold text-secondary md:text-5xl">
-                                What do we do <span className="text-purple-500">&lt;/&gt;</span>?
+                                What do <span className="text-transparent bg-gradient-to-r from-purple-300 to-secondary bg-clip-text">we do?</span>
                             </h2>
                             <p className="text-xl text-gray-300 md:text-2xl">
                                 We are Pioneers in Web3 Innovation, Revolutionizing Your Digital Experience.

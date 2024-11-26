@@ -42,7 +42,7 @@ const AboutUs = () => {
     ];
 
     return (
-        <section className="relative py-20">
+        <section id="about" className="relative py-20">
             {/* Background Image with Overlay */}
             <div
                 className="absolute inset-0 z-0"
@@ -85,7 +85,7 @@ const AboutUs = () => {
                             viewport={{ once: true }}
                         >
                             <p className="text-xl italic text-gray-300">
-                                "Embrace the limitless possibilities of Web3, where innovation propels us into a boundless digital frontier."
+                                &quot;Embrace the limitless possibilities of Web3, where innovation propels us into a boundless digital frontier.&quot;
                             </p>
                         </motion.div>
 
