@@ -43,7 +43,7 @@ const HomePage = () => {
                     </div>
 
                     {/* Right Column - Image with Purple/Teal Glow */}
-                    <div className="justify-center hidden lg:justify-end md:flex">
+                    <div className="justify-center hidden lg:justify-end lg:flex">
                         <div className="relative">
                             {/* Glow Effect */}
                             <div className="absolute transition duration-1000 rounded-lg -inset-4 bg-gradient-to-r from-purple-600/30 to-teal-600/30 blur-xl opacity-30 group-hover:opacity-40"></div>
