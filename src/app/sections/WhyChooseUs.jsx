@@ -72,7 +72,7 @@ const WhyChooseUs = () => {
                         </span>
                     </h2>
                     <p className="text-xl text-gray-300">
-                        We're dedicated to guiding you through the complexities of the Web 3.0 landscape with expertise and innovation.
+                        We&apos;re dedicated to guiding you through the complexities of the Web 3.0 landscape with expertise and innovation.
                     </p>
                 </motion.div>
 

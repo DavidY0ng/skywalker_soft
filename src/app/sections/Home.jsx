@@ -1,4 +1,4 @@
-"use client";  // Add this at the top since we're using framer-motion
+"use client";
 
 import React from "react";
 import Image from "next/image";
@@ -17,6 +17,8 @@ const HomePage = () => {
                     backgroundRepeat: "no-repeat",
                 }}
             >
+                {/* Simple gradient overlay at bottom */}
+                <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-[#14002A] to-transparent" />
             </div>
 
             {/* Content Container */}
